@@ -1,0 +1,19 @@
+body {
+    max-width: 100%;
+    box-sizing:border-box;
+}
+.navbar-a {
+    color: black;
+    padding: 15px;
+    margin: 0px 5px 0px 5px;
+}
+
+.ulnavbar {
+    margin: 0px 0px 0px 150px;
+}
+
+.test {
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
