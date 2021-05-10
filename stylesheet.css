@@ -17,3 +17,23 @@ body {
     top: 350px;
     left: 300px;
 }
+
+.location {
+    background-color: #253551;
+}
+
+.button {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+    border-style: solid;
+    border-width: 3px;
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 25px;
+    display: inline-block;
+}
