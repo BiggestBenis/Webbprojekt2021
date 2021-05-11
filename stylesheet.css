@@ -18,6 +18,18 @@ body {
     left: 300px;
 }
 
+.imagea {
+    color: white;
+    border-bottom: solid 1px white;
+    padding: 2px 0px 2px 0px;
+}
+
+.imagea:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
 .location {
     background-color: #253551;
 }
@@ -28,12 +40,18 @@ body {
     background: transparent;
     border-style: solid;
     border-width: 3px;
-    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
-    -moz-transition: 0.1s background-color linear, 0.1s color linear;
-    -o-transition: 0.1s background-color linear, 0.1s color linear;
-    transition: 0.1s background-color linear, 0.1s color linear;
     padding: 10px;
     margin-top: 15px;
     font-size: 25px;
     display: inline-block;
+}
+
+.button:hover {
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: white;
+    color:#253551;
+    text-decoration: none;
 }
