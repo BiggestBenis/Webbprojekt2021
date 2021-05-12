@@ -2,11 +2,13 @@ body {
     max-width: 100%;
     box-sizing:border-box;
 }
+
+
 .navbar-a {
-    color: black;
-    padding: 15px;
     margin: 0px 5px 0px 5px;
 }
+
+
 
 .ulnavbar {
     margin: 0px 0px 0px 150px;
@@ -46,6 +48,28 @@ body {
     display: inline-block;
 }
 
+.button2 {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 18px;
+    margin-top: 15px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.button2:hover {
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: white;
+    color:#253551;
+    text-decoration: none;
+}
+
 .button:hover {
     -webkit-transition: 0.1s background-color linear, 0.1s color linear;
     -moz-transition: 0.1s background-color linear, 0.1s color linear;
@@ -54,4 +78,49 @@ body {
     background-color: white;
     color:#253551;
     text-decoration: none;
+}
+
+.input {
+    position: relative;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 18px;
+    margin-right: 14px;
+    font-size: 17px;
+}
+
+.menu-select {
+    margin: 0px 10px 0px 10px;
+}
+
+.menu-select-active {
+    text-decoration: underline;
+}
+
+.menu-section-title {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+
+.menu-items {
+    margin-top: 32px;
+}
+
+.menu-item {
+    margin: 0px 0px 32px 0px;
+}
+
+.menu-item-title {
+    font-size: 25px;
+}
+
+.menu-item-description {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.menu-item-cost {
+    margin: 8px 0px 8px 0px;
+    font-size: 18px;
 }
