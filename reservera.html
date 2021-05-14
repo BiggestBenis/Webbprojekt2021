@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Dal baffo</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: 0 0.0625rem 0.5rem 0 rgb(0 0 0 / 4%), 0 0.0625rem 0.3125rem 0 rgb(0 0 0 / 4%);">
+        <a href="index.html">
+        <img src="dallogo.png" alt="" style="height: 90px; width: 90px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link navbar-a" href="Varmeny.html">Vår meny</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-a" href="#">Kontakta oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-a" href="omvarmat.html">Om vår mat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-a" href="reservera.html">Reservera bord</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container" style="max-width: 900px;">
+        <div class="content">
+            <h2 style="text-align: center; margin: 100px 0px 20px 0px;">
+                Gör en reservering
+            </h2>
+            <p style="text-align: center;">
+                Bokning av bord sker två veckor innan ni vill ha erat bord. Vill du besöka Dal Baffo innan två veckor hänvisas du till sidan Kontakta oss. För att reservera bord hos Dal Baffo behöver ni hur många som kommer, vilket datum, tid samt namn och mail från den som bokar.
+            </p>
+            <p style="text-align: center;">
+                Betalning sker på plats.
+            </p>
+
+            <div class="content" style="opacity: 1; background-color: rgba(153,153,153,.15);transition: opacity .3s ease-out; padding: 30px;
+            margin: 100px 0px 100px 0px;">
+                <form action="">
+                    <div class="row" style="justify-content: center; flex-wrap: wrap; align-content:flex-start">
+                            </a>
+                            <select name="Select_1" id="select_1" tabindex="-1" class="formselector"  text="Antal" required>
+                                <option value="" disabled selected hidden>Antal gäster</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 personer</option>
+                                <option value="3">3 personer</option>
+                                <option value="4">4 personer</option>
+                                <option value="5">5 personer</option>
+                                <option value="6">6 personer</option>
+                                <option value="7">7 personer</option>
+                                <option value="8">8 personer</option>
+                                <option value="9">9 personer</option>
+                            </select>
+
+                            <input type="date" name="datepicker" class="formselector" tabindex="0" required>
+
+                            <select name="Select_2" id="select_2" tabindex="1" class="formselector" required>
+                                <option value="" disabled selected hidden>Välj tid</option>
+                                <option value="1">12.00</option>
+                                <option value="2">13.00</option>
+                                <option value="3">14.00</option>
+                                <option value="4">15.00</option>
+                                <option value="5">16.00</option>
+                                <option value="6">17.00</option>
+                                <option value="7">18.00</option>
+                                <option value="8">19.00</option>
+                                <option value="9">20.00</option>
+                                <option value="10">21.00</option>
+                                <option value="11">22.00</option>
+                            </select>
+                    </div>
+
+                    <div class="row" style="justify-content: center; text-align:center;">
+                        <input type="submit" id="submitbutton" value="Hitta ett bord">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-lg-start text-muted" style="background-color: white;">
+
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Dal baffo
+                </h6>
+                <p>
+                  Made by Fillepille
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="Varmeny.html" class="text-reset">Vår meny</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Kontakta oss</a>
+                </p>
+                <p>
+                  <a href="omvarmat.html" class="text-reset">Om vår mat</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Hitta restaurang</a>
+                </p>
+              </div>
+
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p>Randomgata 123</p>
+                <p>
+                  Östra Centrum, Jönköping
+                </p>
+                <p>Dalbaffo@gmail.com</p>
+                <p>+ 01 234 567 89</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>
