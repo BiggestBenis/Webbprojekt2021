@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
-
+    <link href="../CSS/stylesheet.css" rel="stylesheet">
+    
+    <script src="../JAVASCRIPT/js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Dal Baffo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: 0 0.0625rem 0.5rem 0 rgb(0 0 0 / 4%), 0 0.0625rem 0.3125rem 0 rgb(0 0 0 / 4%);">
+
+          <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light navboxshadow">
         <a href="index.html">
-        <img src="dallogo.png" alt="" style="height: 90px; width: 90px;">
+          <img src="../IMG/dalbaffologo.PNG" alt="" style="height: 70px; width: 100px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -27,58 +30,61 @@
               <a class="nav-link navbar-a" href="Varmeny.html">Vår meny</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-a" href="#">Kontakta oss</a>
+              <a class="nav-link navbar-a" href="kontaktaoss.html">Kontakta oss</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navbar-a" href="omvarmat.html">Om vår mat</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-a" href="#">Hitta Restaurang</a>
+              <a class="nav-link navbar-a" href="reservera.html">Reservera Bord</a>
             </li>
           </ul>
         </div>
       </nav>
 
 
+      <!--INPUT KNAPPAR FÖR ATT KUNNA BYTA MELLAN MENYER-->
       <div class="container-fluid" style="margin: 0px; padding: 0px; background-color: #253551;">
         <div class="content" style="display: flex; padding: 80px; justify-content: center; color: white; display: block;">
             <h2 style="text-align:center;white-space:pre-wrap; margin-bottom: 50px;">Vår Meny</h2>
 
             <div class="menu-selector" role="tablist" style="text-align: center;">
-                <label role="tab" class="menu-select menu-select-active">Meny</label>
-                <label role="tab" class="menu-select">Dagens Meny</label>
-                <label role="tab" class="menu-select">Drinks</label>
+                <input type="submit" id="meny" class="menu-select menu-select-active" value="Meny" tabindex="1" onclick="Meny();">
+                <input type="submit" id="dagensmeny" class="menu-select" value="Dagens Meny" tabindex="2" onclick="DagensMeny();" >
+                <input type="submit" id="vin" class="menu-select" value="Vin" tabindex="3" onclick="Drinks();" >
             </div>
 
+
+            <!--SJÄLVA MENYN-->
             <div class="menu-section" style="text-align: center;">
-                <div class="menu-section-title">
+                <div class="menu-section-title" id="menutitle">
                     Meny
                 </div>
                 <div class="menu-items">
                     <div class="menu-item">
                         <div class="menu-item-title">Meny option</div>
-                        <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
-                        <div class="menu-item-cost">100sek</div>
+                        <div class="menu-item-description" id="menu1">Spaghetti alla carbonara</div>
+                        <div class="menu-item-cost">150sek</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-title">Meny option</div>
-                        <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
-                        <div class="menu-item-cost">100sek</div>
+                        <div class="menu-item-description" id="menu2">Ossubuco alla milanese</div>
+                        <div class="menu-item-cost">150sek</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-title">Meny option</div>
-                        <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
-                        <div class="menu-item-cost">100sek</div>
+                        <div class="menu-item-description" id="menu3">Lasagna</div>
+                        <div class="menu-item-cost">150sek</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-title">Meny option</div>
-                        <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
-                        <div class="menu-item-cost">100sek</div>
+                        <div class="menu-item-description" id="menu4">Canederli</div>
+                        <div class="menu-item-cost">150sek</div>
                     </div>
                     <div class="menu-item">
                         <div class="menu-item-title">Meny option</div>
-                        <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing.</div>
-                        <div class="menu-item-cost">100sek</div>
+                        <div class="menu-item-description" id="menu5">Focaccia di Recco</div>
+                        <div class="menu-item-cost">150sek</div>
                     </div>
                 </div>
             </div>
@@ -86,6 +92,8 @@
       </div>
 
 
+
+      <!--FOOTER-->
       <footer class="text-center text-lg-start text-muted" style="background-color: white;">
 
         <section class="">
@@ -107,13 +115,13 @@
                   <a href="Varmeny.html" class="text-reset">Vår meny</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">Kontakta oss</a>
+                  <a href="kontaktaoss.html" class="text-reset">Kontakta oss</a>
                 </p>
                 <p>
                   <a href="omvarmat.html" class="text-reset">Om vår mat</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">Hitta restaurang</a>
+                  <a href="reservera.html" class="text-reset">Reservera bord</a>
                 </p>
               </div>
 

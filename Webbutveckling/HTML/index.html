@@ -6,8 +6,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="../CSS/stylesheet.css" rel="stylesheet">
 
+    <script src="../JAVASCRIPT/js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -15,9 +16,11 @@
     <title>Dal Baffo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: 0 0.0625rem 0.5rem 0 rgb(0 0 0 / 4%), 0 0.0625rem 0.3125rem 0 rgb(0 0 0 / 4%);">
+
+                  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light navbox-shadow navboxshadow">
         <a href="index.html">
-        <img src="dallogo.png" alt="" style="height: 90px; width: 90px;">
+        <img src="../IMG/dalbaffologo.PNG" alt="" style="height: 70px; width: 100px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -28,7 +31,7 @@
               <a class="nav-link navbar-a" href="Varmeny.html">Vår meny</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-a" href="#">Kontakta oss</a>
+              <a class="nav-link navbar-a" href="kontaktaoss.html">Kontakta oss</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navbar-a" href="omvarmat.html">Om vår mat</a>
@@ -40,102 +43,110 @@
         </div>
       </nav>
 
+                <!-- HERO BILD MED NAVBAR -->
       <div class="container-fluid" style="margin: 0px; padding: 0px;">
-        <img src="dalbaffom.jpg" alt="" style="width: 100%; height: 85vh; filter: brightness(60%);">
-          <div class="content" style="position: absolute; top: 50%; left: 50%; transform: translate(-200%, -50%);">
-            <div class="d-block">
+        <img src="../IMG/dalbaffom.jpg" alt=""  class="imgfit imgbrightness">
+          <div class="content navimg">
+          <div class="d-block">
           <h2>
-            <a href="#" style="color: white;" class="imagea">Vår Meny</a>
+            <a href="Varmeny.html" style="color: white;" class="imagea">Vår Meny</a>
           </h2>
           <h2>
-            <a href="#" style="color: white;" class="imagea">Kontakta oss</a>
+            <a href="kontaktaoss.html" style="color: white;" class="imagea">Kontakta oss</a>
           </h2>
           <h2>
-            <a href="#" style="color: white;" class="imagea">Om vår mat</a>
+            <a href="omvarmat.html" style="color: white;" class="imagea">Om vår mat</a>
           </h2>
           <h2>
-            <a href="#" style="color: white;" class="imagea">Reservera bord</a>
+            <a href="reservera.html" style="color: white;" class="imagea">Reservera bord</a>
           </h2>
         </div>
           </div>
       </div>
 
-      <div class="container-fluid location">
-          <div class="container" style="width: 50%; padding: 80px; text-align: center;">
-            <h1 style="color: white; font-size: 30px;">
-                lorem ipsum sdaufh udhsfiuh udhfsiuhfds sgfdojk ofdjgioij 
-            </h1>
+                      <!--DIV MED PRIMÄR FÄRG-->
+      <div class="container-fluid primalcolor">
+          <div class="container primaldiv">
+            <h2 class="primaldivtext">
+                Lokaliserad i Östra Centrum, Jönköping, Dal Baffo serverar en autentisk italiensk mat till folk.
+            </h2>
 
-            <h1 style="color: white; font-size: 30px;">
+            <h2 class="primaldivtext">
                 Vi serverar även öl, vin samt sprit.
-            </h1>
+            </h2>
 
-            <a href="#" class="button">
+            <a href="reservera.html" class="button">
                 Gör en reservering
             </a>
           </div>
       </div>
-
+              <!--CONTAINER MED TEXT OCH BILD-->
       <div class="container-fluid">
-          <div class="content" style="padding: 80px;">
-            <div class="col-md-4 d-inline-block" style="text-align: center; margin-left: 200px; margin-right: 8%; position: relative; bottom: -95px;">
+          <div class="row flexwrapping rowreverse" style="justify-content: center;">
+
+            <div class="col-md-4">
+                <img src="../IMG/cheese3.jpg" alt="" class="divimg">
+            </div>
+            <div class="col-md-4 textwithimg">
               <h2>
-                Tapas originated in the Catalonian region of Spain and are small plates typically consumed with wine or vermouth.
+                Italienska köket är ett medelshavsmat som består av ingredienser, recept och matlagningstekniker som utvecklas över den italienska halvön sedan antiken.
               </h2>
               <p>
-                We combine traditional preparations with local ingredients for dishes that are authentic to both their Spanish origins and New York setting.
+                Vi kombinerar traditionella förberedelser med lokala ingredienser för rätter som är autentiska till Italienska maten
               </p>
-              <a href="#">
-                Learn more about our food.
+              <a href="omvarmat.html">
+                Lär dig mer om vår mat
               </a>
             </div>
-            <div class="col-md-4 d-inline-block">
-              <img src="cheese.jpg" alt="" style="width: 550px; height: auto;">
-            </div>
           </div>
       </div>
 
+
+                <!--CONTAINER MED BILD SOM TÄCKER HELA SIDAN-->
       <div class="container-fluid" style="margin: 0px; padding: 0px;">
-        <img src="food.jpg" alt="" style="width:100%; height: 95vh;">
+        <img src="../IMG/food.jpg" alt="" class="imgfit">
       </div>
 
+      <!--CONTAINER MED TEXT OCH BILD-->
       <div class="container-fluid">
-        <div class="content" style="padding: 80px;">
-          <div class="col-md-4 d-inline-block" style="margin-left: 200px; margin-right: 8%;">
-            <img src="coverimage.jpg" alt="" style="width: 550px; height: auto;">
+        <div class="row flexwrapping">
+          <div class="col-md-4 flex">
+            <img src="../IMG/coverimage.jpg" alt="" class="divimg">
           </div>
 
-          <div class="col-md-4 d-inline-block " style="text-align: center; position: relative; bottom: -95px;">
+          <div class="col-md-4 textwithimg">
             <h2>
-              Vermouth is the typical accompaniment to tapas and we invite you to sample our extensive and surprising list.
+              Vin är den typiska parten till italiensk mat och vi bjuder in dig till att ta ett glas vin till din mat.
             </h2>
             <p>
-              In addition, we offer craft beer, Spanish and American wines, a full bar and a variety of delightful non-alcoholic options.
+              Vi serverar även öl, spansk och amerikansk vin, en full bar och en variation av alkoholfria drycker
             </p>
           </div>
         </div>
       </div>
 
-      <div class="container-fluid location" style="margin: 0px; padding: 0px;">
-        <div class="container" style="width: 50%; padding: 80px; text-align: center;">
-          <h1 style="color: white; font-size: 30px;">
-            Randomgata 123 
+
+                  <!--DIV MED PRIMÄRFÄRG-->
+      <div class="container-fluid primalcolor" style="margin: 0px; padding: 0px;">
+        <div class="container primaldiv">
+          <h1 class="primaldivtext">
+            Östra Storgatan 73
         </h1>
 
-        <h1 style="color: white; font-size: 30px;">
+        <h1 class="primaldivtext">
             Östra Centrum, Jönköping
         </h1>
 
-        <a href="#" class="button">
+        <a href="kontaktaoss.html#komtilloss" class="button">
             Hitta oss
         </a>
 
         <div class="row" style="margin-top: 120px;">
-          <div class="col-md-6">
+          <div class="col-md-6" style="margin: 5px 0px 5px 0px;">
             <h2 style="color: white;">Måndag-Torsdag</h2>
             <h2 style="color: white;">12.00-10.00</h2>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" style="margin: 5px 0px 5px 0px;">
             <h2 style="color: white;">Fredag-Söndag</h2>
             <h2 style="color: white;">12.00-11.00</h2>
           </div>
@@ -143,9 +154,11 @@
         </div>
       </div>
 
+
+              <!--CONTAINER MED HELTÄKANDE BILD SAMT NYHETSBREV-->
       <div class="container-fluid" style="padding: 0px; margin: 0px; position: relative; text-align: center;">
-        <img src="coverimage2.jpg" alt="" style="width:100%; height: 70vh; position: relative; filter: brightness(60%);">
-        <div class="content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <img src="../IMG/coverimage2.jpg" alt="" class="imgfit imgbrightness">
+        <div class="content textnyhetsbrev">
           <h2 style="color: white;">
             Skriv upp til vårt nyhetsbrev
           </h2>
@@ -153,13 +166,14 @@
             Skriv upp för att få nyheter och uppdateringar.
           </p>
 
-          <input class="input" spellcheck="false" placeholder="Email Address">
-
-          <a href="#" class="button2">Sign up</a>
+          <input class="input" spellcheck="false" placeholder="Email Address" id="nyhetinput">
+          <input type="submit" class="button2" onclick="nyhetsbrev();" value="Sign up">
 
         </div>
       </div>
 
+
+              <!--FOOTER-->
       <footer class="text-center text-lg-start text-muted" style="background-color: white;">
 
         <section class="">
@@ -181,13 +195,13 @@
                   <a href="Varmeny.html" class="text-reset">Vår meny</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">Kontakta oss</a>
+                  <a href="kontaktaoss.html" class="text-reset">Kontakta oss</a>
                 </p>
                 <p>
                   <a href="omvarmat.html" class="text-reset">Om vår mat</a>
                 </p>
                 <p>
-                  <a href="#!" class="text-reset">Hitta restaurang</a>
+                  <a href="reservera.html" class="text-reset">Reservera Bord</a>
                 </p>
               </div>
 

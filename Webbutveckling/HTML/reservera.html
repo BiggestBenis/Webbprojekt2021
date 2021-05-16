@@ -7,8 +7,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="../CSS/stylesheet.css" rel="stylesheet">
 
+    <script src="../JAVASCRIPT/js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -16,9 +17,11 @@
     <title>Dal baffo</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="box-shadow: 0 0.0625rem 0.5rem 0 rgb(0 0 0 / 4%), 0 0.0625rem 0.3125rem 0 rgb(0 0 0 / 4%);">
+
+        <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light navboxshadow">
         <a href="index.html">
-        <img src="dallogo.png" alt="" style="height: 90px; width: 90px;">
+          <img src="../IMG/dalbaffologo.PNG" alt="" style="height: 70px; width: 100px;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,18 +32,20 @@
               <a class="nav-link navbar-a" href="Varmeny.html">Vår meny</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link navbar-a" href="#">Kontakta oss</a>
+              <a class="nav-link navbar-a" href="kontaktaoss.html">Kontakta oss</a>
             </li>
             <li class="nav-item">
               <a class="nav-link navbar-a" href="omvarmat.html">Om vår mat</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-a" href="reservera.html">Reservera bord</a>
+            <li class="nav-item active">
+              <a class="nav-link navbar-a" href="reservera.html">Reservera Bord</a>
             </li>
           </ul>
         </div>
       </nav>
 
+
+      <!--INFORMATION OM ATT BOKA-->
     <div class="container" style="max-width: 900px;">
         <div class="content">
             <h2 style="text-align: center; margin: 100px 0px 20px 0px;">
@@ -53,12 +58,13 @@
                 Betalning sker på plats.
             </p>
 
-            <div class="content" style="opacity: 1; background-color: rgba(153,153,153,.15);transition: opacity .3s ease-out; padding: 30px;
+
+            <!--FORM FÖR ATT KUNNA BOKA-->
+            <div class="content" style="background-color: #EBEBEB; padding: 30px;
             margin: 100px 0px 100px 0px;">
-                <form action="">
+                <form>
                     <div class="row" style="justify-content: center; flex-wrap: wrap; align-content:flex-start">
-                            </a>
-                            <select name="Select_1" id="select_1" tabindex="-1" class="formselector"  text="Antal" required>
+                            <select name="Select_1" id="select_1" tabindex="-1" class="formselector" required>
                                 <option value="" disabled selected hidden>Antal gäster</option>
                                 <option value="1">1 person</option>
                                 <option value="2">2 personer</option>
@@ -71,7 +77,7 @@
                                 <option value="9">9 personer</option>
                             </select>
 
-                            <input type="date" name="datepicker" class="formselector" tabindex="0" required>
+                            <input type="date" name="datepicker" id="datepicker" class="formselector" tabindex="2" required>
 
                             <select name="Select_2" id="select_2" tabindex="1" class="formselector" required>
                                 <option value="" disabled selected hidden>Välj tid</option>
@@ -89,8 +95,10 @@
                             </select>
                     </div>
 
+
+                        <!--INPUT KNAPP FÖR ATT BOKA-->
                     <div class="row" style="justify-content: center; text-align:center;">
-                        <input type="submit" id="submitbutton" value="Hitta ett bord">
+                        <input type="submit" id="submitbutton" value="Hitta ett bord" onclick="reservera();">
 
                     </div>
                 </form>
@@ -98,6 +106,9 @@
         </div>
     </div>
 
+
+
+            <!--FOOTER-->
     <footer class="text-center text-lg-start text-muted" style="background-color: white;">
 
         <section class="">

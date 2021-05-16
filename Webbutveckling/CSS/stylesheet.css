@@ -1,0 +1,345 @@
+/* SCROLLBAR */
+
+::-webkit-scrollbar-track{box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+::-webkit-scrollbar{width: 11px;}
+::-webkit-scrollbar-thumb{background-color: black;}
+
+/* Basic regler */
+* {
+    box-sizing:border-box;
+}
+
+
+/* Box shadow till navbar*/
+.navboxshadow {
+    box-shadow: 0 0.0625rem 0.5rem 0 rgb(0 0 0 / 4%), 0 0.0625rem 0.3125rem 0 rgb(0 0 0 / 4%);
+}
+
+/* Kod till bilder som täcker hela sidan*/
+.imgfit {
+    width: 100%; 
+    height: 85vh;
+    object-fit: cover;
+}
+
+/* Gör bilder lite mörkare där text ligger över*/
+.imgbrightness {
+    filter: brightness(60%);
+}
+/* Kod till navbar i bild på index.html*/ 
+.navimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -50%);
+}
+
+@media only screen and (max-width: 1000px) {
+    .navimg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+/* Till nyhetsbrevet*/
+.textnyhetsbrev {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/* Kod till containers där det finns bilder och text jämte varandra*/
+.marginright {
+    margin-right: 8%!important;
+}
+@media only screen and (max-width: 766px) {
+    .marginright {
+        margin-right: 0!important;
+    }
+}
+
+.divimg {
+    width: calc(100% ); 
+    height: auto;
+}
+
+.textwithimg {
+    display: flex; 
+    flex-direction:column; 
+    text-align: center;  
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.rowreverse {
+    flex-direction: row-reverse;
+}
+
+.flexwrapping {
+    flex-wrap: wrap; 
+    align-content:center;
+    padding: 6.6vmax 4vw 6.6vmax 4vw;
+    justify-content: center;
+}
+
+.flexwrapping2 {
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-content:center;
+}
+
+
+/* Kod till divs där bakgrundsfärgen är primärfärgen */
+
+.primalcolor {
+    background-color: #253551;
+}
+
+.primaldiv {
+    width: 50%; 
+    padding: 6.6vmax 4vw 6.6vmax 4vw;
+    text-align: center;
+}
+
+.primaldivtext {
+    font-size: 30px;
+    color: white;
+
+}
+@media only screen and (max-width: 900px) {
+.primaldiv {
+    width: 100%;
+}
+}
+
+.imagea {
+    color: white;
+    border-bottom: solid 1px white;
+    padding: 2px 0px 2px 0px;
+}
+
+.imagea:hover {
+    text-decoration: none;
+    color: white;
+}
+
+/* Kod till olika knappar på sidan*/
+.button {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 25px;
+    display: inline-block;
+}
+.button:hover {
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: white;
+    color:#253551;
+    text-decoration: none;
+}
+
+.button2 {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    padding: 18px;
+    margin-top: 15px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.button2:hover {
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    background-color: white;
+    color:#253551;
+    text-decoration: none;
+}
+
+.button3 {
+    padding: 10px;
+    color: #f28123;
+    border-color: #f28123;
+    background: transparent;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 15px;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.button3:hover {
+    background-color: #f28123;
+    color: #fff;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    -webkit-transition: 0.1s background-color linear, 0.1s color linear;
+    -moz-transition: 0.1s background-color linear, 0.1s color linear;
+    -o-transition: 0.1s background-color linear, 0.1s color linear;
+    text-decoration: none;
+}
+
+/* Kod till Vår meny sida*/
+.menu-select {
+    margin: 0px 10px 0px 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.menu-select-active {
+    text-decoration: underline;
+}
+
+.menu-section-title {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+
+.menu-items {
+    margin-top: 32px;
+}
+
+.menu-item {
+    margin: 0px 0px 32px 0px;
+}
+
+.menu-item-title {
+    font-size: 25px;
+}
+
+.menu-item-description {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.menu-item-cost {
+    margin: 8px 0px 8px 0px;
+    font-size: 18px;
+}
+
+/* Kod till reserveringsfunktionen på reserveringssidan*/
+
+.formselector {
+    position: relative;
+    display: block;
+    color: #2d333f;
+    padding: 14px 20px 14px 36px;
+    z-index: 1;
+    border: none;
+    font-weight: 500;
+    margin: 10px;
+    width: 220px;
+}
+
+#select_1{
+    top: 0;
+    cursor: pointer;
+    border-radius: 0;
+    color: #2d333f;
+    font-size: 16px;
+    background-color: white;
+    z-index: 2;
+}
+
+#select_2 {
+    top: 0;
+    cursor: pointer;
+    border-radius: 0;
+    color: #2d333f;
+    font-size: 16px;
+    background-color: white;
+    z-index: 2;
+}
+
+#submitbutton {
+    width: 100% !important;
+    max-width: 220px;
+    float: none !important;
+    line-height: 1em;
+    display: inline;
+    color: #fff;
+    background: #000;
+    height: 50px;
+    font-weight: 500;
+}
+
+/* Kod till kontakta oss sidan */
+
+.contactusflex {
+    background-color: #EBEBEB; 
+    padding: 30px;
+    text-align: center; 
+    max-width: 300px;
+    margin: 10px 0 10px 0px;
+}
+
+/* Kod till formuläret på kontakta oss */
+
+.formstyle {
+    padding: 30px;
+    background-color: #EBEBEB;
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+}
+
+.forminput {
+    position: relative;
+    display: block;
+    color: #2d333f;
+    padding: 14px 20px 14px 20px;
+    z-index: 1;
+    border: none;
+    font-weight: 500;
+    margin: 10px;
+    width: 220px;
+}
+/* Kod till tabelen på kontakta oss sidan */
+.tableinfo, .table2 {
+    border-collapse: collapse;
+    margin: 0px 0px 25px 0px;
+    font-size: 16px;
+    max-width: 600px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .tableinfo, .table2 {
+        max-width: 300px;
+    }
+}
+
+.thead {display: inline-block;}
+.trhead {
+    background-color: #253551;
+    color: #ffffff;
+    font-weight:bold;
+}
+
+.tableinfo > tbody tr:nth-of-type(even) {background-color: #f3f3f3;}
+.tableinfo > tbody tr:last-of-type {border-bottom: 2px solid #253551;}
+
+.tableinfo > tbody > tr > td {
+    padding: 12px 15px;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
