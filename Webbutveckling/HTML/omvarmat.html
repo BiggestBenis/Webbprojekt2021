@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../CSS/stylesheet.css" rel="stylesheet">
+    <!--Ssylesheet till animationer-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -48,10 +50,10 @@
       <div class="container-fluid">
         <div class="row flexwrapping rowreverse" style="justify-content: center;">
 
-          <div class="col-md-4">
+          <div data-aos="fade-up" class="col-md-4">
               <img src="../IMG/food2.jpg" alt="" class="divimg">
           </div>
-          <div class="col-md-4 textwithimg">
+          <div data-aos="fade-up" class="col-md-4 textwithimg">
             <h2>
              Om vår mat
             </h2>
@@ -76,11 +78,11 @@
     <!--DIV med BILD MED TEXT-->
       <div class="container-fluid">
         <div class="row flexwrapping">
-          <div class="col-md-4 flex">
+          <div data-aos="fade-up" class="col-md-4 flex">
             <img src="../IMG/food3.jpg" alt="" class="divimg">
           </div>
 
-          <div class="col-md-4 textwithimg">
+          <div data-aos="fade-up" class="col-md-4 textwithimg">
             <h2>
               Alltid svenskt kött
             </h2>
@@ -109,10 +111,10 @@
   <div class="container-fluid">
     <div class="row flexwrapping rowreverse" style="justify-content: center;">
 
-      <div class="col-md-4">
+      <div data-aos="fade-up" class="col-md-4">
           <img src="../IMG/food5.jpg" alt="" class="divimg">
       </div>
-      <div class="col-md-4 textwithimg">
+      <div data-aos="fade-up" class="col-md-4 textwithimg">
         <h2>
          Kyckling
         </h2>
@@ -174,5 +176,12 @@
         </div>
       </section>
     </footer>
+    <!--Script till animationer-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
 </body>
 </html>
